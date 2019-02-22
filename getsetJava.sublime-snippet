@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[public $2 get${1/(.*)/\u$1/}()
+{
+    return this.${1:$SELECTION};
+}
+
+public void set${1/(.*)/\u$1/}($2 $1)
+{
+	this.$1 = $1;
+}
+]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>getset</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>source.java</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Create getter and setter methods</description>
+</snippet>
